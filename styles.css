@@ -16,10 +16,11 @@ body {
 }
 
 .testimonials {
-    margin-top:auto;
-    margin: 55px ;
-    max-width: 1050px;
-    padding: 25px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 32px auto;
+    padding: 16px;
+    box-sizing: border-box;
     border: 3px solid #bfa9a9;
     border-radius: 24px;
     background: rgba(255, 255, 255, 0.55);
@@ -30,50 +31,77 @@ body {
     color: #243b53;
     font-size: 24px;
     text-align: center;
+    margin: 0 0 16px;
+}
+
+
+
+.card {
+    padding: 16px;
+    border-radius: 18px;
+    box-shadow: 0 8px 18px rgba(24, 36, 51, 0.12);
 }
 
 .card-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(2, minmax(190px, auto));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, auto);
     gap: 18px;
-}
-
-.card {
-    padding: 22px;
-    border-radius: 18px;
-    box-shadow: 0 8px 18px rgba(24, 36, 51, 0.12);
+    align-items: start;
 }
 
 .card1 {
     grid-column: 1;
     grid-row: 1;
-    background-color: #5b3c88;
+    background-color: #244b70;
     color: #ffffff;
     border: 3px solid #bfa9a9;
+    border-radius: 24px;
+    
 }
 
 .card2 {
-    grid-column: 1;
-    grid-row: 2;
-    background-color: #dceef2;
-    color: #183b47;
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #d9efec;
+    color: #173c38;
     border: 3px solid #bfa9a9;
+    border-radius: 24px;
 }
 
 .card3 {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    background-color: #f4dfc8;
-    color: #49351f;
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #e9e1f4;
+    color: #38264d;
     border: 3px solid #bfa9a9;
+    border-radius: 24px;
+}
+
+.card4 {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #f5e6c8;
+    color: #49350e;
+    border: 3px solid #bfa9a9;
+    border-radius: 24px;
+}
+
+.card5 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    align-self: stretch;
+    background-color: #37325f;
+    color: #ffffff;
+    border: 3px solid #bfa9a9;
+    border-radius: 24px;
 }
 
 .profile {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .profile img {
@@ -86,15 +114,19 @@ body {
 
 .name {
     font-size: 18px;
+    margin: 0;
 }
 
 .headline {
     font-size: 18px;
     font-weight: bold;
     line-height: 1.4;
+    margin: 0 0 10px;
 }
 
 .info {
     font-size: 14px;
     line-height: 1.6;
+    margin: 0;
 }
+
